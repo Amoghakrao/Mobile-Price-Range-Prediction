@@ -1,48 +1,9 @@
+![image](https://github.com/Amoghakrao/Mobile-Price-Range-Prediction/assets/109468603/f44f6605-7006-4b71-aa45-0da32e5d3c2c)
 
-ML-Capstone-Project-Classification
 
 Mobile Price Range Prediction In the competitive mobile phone market companies want to understand sales data of mobile phones and factors which drive the prices. The objective is to find out some relation between features of a mobile phone(eg:- RAM, Internal Memory, etc) and its selling price. In this problem, we do not have to predict the actual price but a price range indicating how high the price is.
 
-#Data Description -
+The dataset is clean (no null values or duplicate records) and well-maintained. Based on EDA, target classes are generally balanced and don’t differ significantly. The majority of categorical features have a similar distribution (except for ‘three_g’ where very few records were found of mobile phones without 3G access). With the exception of a few ‘corrected’ numerical features, most numerical features follow a homogeneous distribution. The number of categorical features doesn’t change much with price ranges. However, we did observe a slight increase for each feature for the very high cost category. RAM is the most correlated feature and is the most important factor in determining price ranges. The battery power and the pixel resolution have a slight correlation to the target variable. These four features have a strong influence on price ranges. In addition to these features, there is no other feature with a good correlation to target variable.
 
-Battery_power - Total energy a battery can store in one time measured in mAh
 
-Blue - Has bluetooth or not
-
-Clock_speed - speed at which microprocessor executes instructions
-
-Dual_sim - Has dual sim support or not
-
-Fc - Front Camera mega pixels
-
-Four_g - Has 4G or not
-
-Int_memory - Internal Memory in Gigabytes
-
-M_dep - Mobile Depth in cm
-
-Mobile_wt - Weight of mobile phone
-
-N_cores - Number of cores of processor
-
-Pc - Primary Camera mega pixels
-
-Px_height - Pixel Resolution Height
-
-Px_width - Pixel Resolution Width
-
-Ram - Random Access Memory in Mega Bytes
-
-Sc_h - Screen Height of mobile in cm
-
-Sc_w - Screen Width of mobile in cm
-
-Talk_time - longest time that a single battery charge will last when you are
-
-Three_g - Has 3G or not
-
-Touch_screen - Has touch screen or not
-
-Wifi - Has wifi or not
-
-Price_range - This is the target variable with value of 0(low cost), 1(medium cost), 2(high cost) and 3(very high cost).
+Machine learning algorithms were applied to the split and standardized dataset, and their performance was assessed using various evaluation metrics. The classification models employed were decision trees, logistic regression, support vector machines, and K-nearest neighbors (KNN). The results indicated that all four models performed reasonably well in predicting price ranges. Notably, KNN and support vector machines exhibited the highest accuracy, achieving a 95% accuracy rate.It was observed that the key determinants of price ranges were RAM, battery power, pixel height, and pixel width. Higher values for these factors were associated with a broader price range. It's worth noting that as technology advances, these numerical values may change over time, emphasizing the need for periodic model reevaluation.
